@@ -77,7 +77,7 @@ namespace Sketch.Inventory
                 }
                 else if (me.ContainedItem.Name == InventoryManager.Instance.DraggingTile.ContainedItem.Name)
                 {
-                    if (me.GetInstanceID() == InventoryManager.Instance.DraggingTile.GetInstanceID())
+                    if (me.GetEntityId() == InventoryManager.Instance.DraggingTile.GetEntityId())
                     {
                         // The target tile is the current tile we are on, nothing to do
                     }
@@ -99,7 +99,7 @@ namespace Sketch.Inventory
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (InventoryManager.Instance.HoverredTile.GetInstanceID() == GetInstanceID())
+            if (InventoryManager.Instance.HoverredTile.GetEntityId() == GetEntityId())
             {
                 InventoryManager.Instance.HoverredTile = null;
             }

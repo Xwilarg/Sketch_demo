@@ -1,3 +1,4 @@
+using Ink.UnityIntegration;
 using Sketch.Achievement;
 using Sketch.VN.InkleInk;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace Sketch.VN
     public class GameManager : MonoBehaviour
     {
         [SerializeField]
-        private TextAsset _introStory;
+        private InkFile _introStory;
 
         private bool _didUseSkip;
 

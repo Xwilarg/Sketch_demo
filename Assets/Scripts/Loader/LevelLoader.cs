@@ -15,7 +15,7 @@ namespace Sketch.Loader
             {
                 Instance = this;
             }
-            else if (Instance.GetInstanceID() != GetInstanceID())
+            else if (Instance.GetEntityId() != GetEntityId())
             {
                 Destroy(gameObject);
                 return;
